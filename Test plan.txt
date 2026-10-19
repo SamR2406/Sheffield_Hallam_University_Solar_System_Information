@@ -1,0 +1,205 @@
+SOLAR SYSTEM INFORMATION PYTHON PROGRAM
+
+This test plan's purpose is to check that the program works correctly by testing the main features, such as planet search, information display,
+handling invalid user inputs and navigating between the different menus.
+
+I will use manual black-box testing by providing different inputs while comparing their results with the expected results.
+
+- Test Cases
+
+1.- Run the program = The main menu shows the first three options. PASS
+
+=== Solar System Information ===
+1. Show all planets
+2. Search for a planet
+3. Exit
+Enter your choice:
+
+
+2.- Select option 1 = All eight hardcoded planets names are displayed in the program. PASS
+
+=== Solar System Information ===
+1. Show all planets
+2. Search for a planet
+3. Exit
+Enter your choice: 1
+Mercury
+Venus
+Earth
+Mars
+Jupiter
+Saturn
+Uranus
+Neptune
+
+
+3.- Search for Saturn using main menu option 2, then select option 1 = Displays Saturn's name, mass, distance from sun and moons, only some moons are named. PASS
+
+=== Solar System Information ===
+1. Show all planets
+2. Search for a planet
+3. Exit
+Enter your choice: 2
+Enter planet name: Saturn
+
+=== Saturn ===
+1. Show all information
+2. Show mass
+3. Show distance from the Sun
+4. Show number of moons
+5. Back to main menu
+Enter your choice: 1
+Planet Name: Saturn
+Mass: 5.683e+26 kg
+Distance from Sun: 1434000000 km
+Number of Moons: 293
+Moons: Titan, Rhea, Iapetus, Dione, Tethys, Enceladus, Mimas
+
+
+4.- Search for Neptune and select option 2 = Neptune's mass is displayed in kg. PASS
+
+=== Neptune ===
+1. Show all information
+2. Show mass
+3. Show distance from the Sun
+4. Show number of moons
+5. Back to main menu
+Enter your choice: 2
+Mass: 1.024e+26 kg
+
+
+5.- Search for Earth and select option 4 = The program displays 1 moon. PASS
+
+=== Earth ===
+1. Show all information
+2. Show mass
+3. Show distance from the Sun
+4. Show number of moons
+5. Back to main menu
+Enter your choice: 4
+Number of moons: 1
+
+
+6.- Search for Mercury and select option 1 = The program displays "Moons: None" and 0 moons. PASS
+
+=== Mercury ===
+1. Show all information
+2. Show mass
+3. Show distance from the Sun
+4. Show number of moons
+5. Back to main menu
+Enter your choice: 1
+Planet Name: Mercury
+Mass: 3.3011e+23 kg
+Distance from Sun: 57900000 km
+Number of Moons: 0
+Moons: None
+
+
+7.- Search for "SATURN" = The program finds Saturn or any other planet even if the name is in capital letters. PASS
+
+=== Solar System Information ===
+1. Show all planets
+2. Search for a planet
+3. Exit
+Enter your choice: 2
+Enter planet name: SATURN
+
+=== Saturn ===
+1. Show all information
+2. Show mass
+3. Show distance from the Sun
+4. Show number of moons
+5. Back to main menu
+
+
+8.- Search for " Saturn" = The program finds the planet despite the spaces. PASS
+
+=== Solar System Information ===
+1. Show all planets
+2. Search for a planet
+3. Exit
+Enter your choice: 2
+Enter planet name:  Saturn
+
+=== Saturn ===
+1. Show all information
+2. Show mass
+3. Show distance from the Sun
+4. Show number of moons
+5. Back to main menu
+Enter your choice:
+
+
+9.- Search for "Pluto" = The program displays "Planet not found.". PASS
+
+=== Solar System Information ===
+1. Show all planets
+2. Search for a planet
+3. Exit
+Enter your choice: 2
+Enter planet name: Pluto
+Planet not found.
+
+
+10.- Press enter without typing a name = The program asks the user to try again. PASS
+
+=== Solar System Information ===
+1. Show all planets
+2. Search for a planet
+3. Exit
+Enter your choice: 2
+Enter planet name:
+Please enter a planet name.
+Enter planet name:
+
+
+11.- Enter option 8 in the main menu = The program displays an error message and it shows the menu again. PASS
+
+=== Solar System Information ===
+1. Show all planets
+2. Search for a planet
+3. Exit
+Enter your choice: 8
+Invalid choice. Please try again.
+
+=== Solar System Information ===
+1. Show all planets
+2. Search for a planet
+3. Exit
+Enter your choice:
+
+
+12.- Select option 5 in the planet information menu = The program takes the user to the main menu. PASS
+
+=== Earth ===
+1. Show all information
+2. Show mass
+3. Show distance from the Sun
+4. Show number of moons
+5. Back to main menu
+Enter your choice: 5
+
+=== Solar System Information ===
+1. Show all planets
+2. Search for a planet
+3. Exit
+Enter your choice:
+
+
+13.- In the main menu select option 3 = The program displays a goodbye message and exits. PASS
+
+=== Solar System Information ===
+1. Show all planets
+2. Search for a planet
+3. Exit
+Enter your choice: 3
+Goodbye!
+
+Test results
+
+Tests passed: 13/13
+Test failed: 0
+
+All tests were completed successfully and the program worked as expected, displaying information about the listed planets correctly, it accepts valid inputs, and allows users
+to move between menus. No errors were found.
