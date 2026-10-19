@@ -2,6 +2,6 @@ Transparency Statement
 
 AITS Descriptor: 2 AI for shaping
 
-I used ChatGPT to help me understand concepts discussed in the sources referenced in 
-Planet.py by explaning them again using simpler terms, the method join() and the menu made 
-with while loop's in Stackoverflow.
+I only used ChatGPT to help me understand concepts discussed in the sources referenced in 
+Planet.py by explaining them again using simpler terms, the method join() and the menu made 
+with while loop's in Stackoverflow. I wrote the code and test plan by myself.
